@@ -1,5 +1,5 @@
 body {
-            background: img src="wallpaper.png" no-repeat center center fixed;
+            background: img src="wallpaper.png" no-repeat center center relative;
             background-size: cover;
             font-family: Arial, sans-serif;
             color: #fff;
@@ -38,7 +38,7 @@ body {
     padding: 10px;
     position: relative;
     bottom: 0;
-    width:100%;
+    width: 100%;
   }
   p{
     font-size: 1.1em;
