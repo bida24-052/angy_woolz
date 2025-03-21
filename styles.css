@@ -1,4 +1,4 @@
-index.html {
+body {
             background-image: url('wallpaper.png');
             background-repeat: no-repeat;
             background-attachment: fixed;
@@ -48,7 +48,7 @@ body {
     width: 100%;
   }
   p{
-    font-size: 1.1em;
+    font-size: 1.3em;
   }
   a{
     color: #4CAF50;
