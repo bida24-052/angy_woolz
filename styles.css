@@ -1,8 +1,9 @@
 index.html {
-            background-image: "wallpaper.png";
+            background-image: url('wallpaper.png');
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: 100% 100%;
+}
             
             
 body {
