@@ -63,36 +63,28 @@
 </head>
 <body>
 
-        <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
-        body { background-color: #f4f4f4; }
-        .slider-container { width: 100%; height: 100vh; overflow: hidden; position: relative; }
-        .slides { display: flex; width: 300%; height: 100%; transition: transform 1s ease-in-out; }
-        .slide { width: 100vw; height: 100vh; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: white; text-shadow: 2px 2px 8px rgba(0,0,0,0.7); }
-        .slide:nth-child(1) { background: url('gdress.png') center/cover no-repeat; }
-        .slide:nth-child(2) { background: url('cardigan.png') center/cover no-repeat; }
-        .slide:nth-child(3) { background: url('butterfly dress.png') center/cover no-repeat; }
-        .message { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; background: rgba(0,0,0,0.5); padding: 20px; border-radius: 10px; }
-    </style>
-</head>
-<body>
-    <div class="slider-container">
-        <div class="slides">
-            <div class="slide">Handmade with Love</div>
-            <div class="slide">Unique Crochet Fashion</div>
-            <div class="slide">Style Meets Craftsmanship</div>
-        </div>
+       
+       <div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="butterfly dress.png" class="d-block w-100" alt="butterfly dress.png">
     </div>
-    <script>
-        let index = 0;
-        function changeSlide() {
-            const slides = document.querySelector('.slides');
-            index = (index + 1) % 3;
-            slides.style.transform = translateX(-${index * 100}vw);
-        }
-        setInterval(changeSlide, 3000);
-    </script>                             
-
+    <div class="carousel-item">
+      <img src="gdress.png" class="d-block w-100" alt="gdress.png">
+    </div>
+    <div class="carousel-item">
+      <img src="men brown.png" class="d-block w-100" alt="men brown.png">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
 <footer>
     <p>&copy; 2025 ANGYWOOLZ</p>
     <p>Contact: <a href="maitlo:angywoolz@gmail.com">angywoolz@gmail.com</a> Phone:<a href="tel:+26772635910">+26772635910</a></p>
